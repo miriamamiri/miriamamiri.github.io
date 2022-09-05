@@ -6,6 +6,9 @@ main:
   - title: "CV"
     url: /cv/    
     
-  - title: "Blog"
+  - title: "Posts"
+    url: /posts/
+  
+  - title: "یادداشت‌های فارسی"
     url: /blog/
    
