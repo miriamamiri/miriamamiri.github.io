@@ -80,9 +80,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Esmaeil's"
+  name             : ""
   avatar           : "profile.png"
-  bio              : "Confused Economist"
+  bio              : ""
   location         : "Burnaby, BC, Canada"
   employer         :
   pubmed           : 
