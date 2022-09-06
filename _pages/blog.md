@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "یادداشت‌های فارسی"
-permalink: /posts/
+permalink: /blog/
 author_profile: true
 ---
 
