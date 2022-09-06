@@ -5,6 +5,6 @@ permalink: /posts/
 author_profile: true
 ---
 
-# Post 1
+### Post 1
 
-# Post 2
+### Post 2
