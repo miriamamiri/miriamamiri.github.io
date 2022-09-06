@@ -21,5 +21,5 @@ author_profile: true
 ### Education and Civic Participation (work in progress)
 
 ## Applied Microeconomics
-### Stock Markets Reaction to Climate Risks (work in progress)
-### Housing Markets and Infrastructure Projects (work in progress)
+### How Stock Markets React to Climate Risks (work in progress)
+### Housing Markets Equilibrium and Infrastructure Projects (work in progress)
