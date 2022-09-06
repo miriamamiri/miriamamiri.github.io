@@ -81,20 +81,13 @@ analytics:
 # Site Author
 author:
   name             : ""
-  avatar           : "Izzy.jpg"
+  avatar           : "Esmaeil.jpg"
   bio              : ""
   location         : "Burnaby, BC, Canada"
   employer         :
   pubmed           : 
   googlescholar    : 
   email            : "eizadi@sfu.ca"
-  researchgate     : 
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
   foursquare       :
   github           : 
   google_plus      :
@@ -178,13 +171,13 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  publications:
+  blog:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  research:
     output: true
     permalink: /:collection/:path/
-  talks:
+  posts:
     output: true
     permalink: /:collection/:path/
 
