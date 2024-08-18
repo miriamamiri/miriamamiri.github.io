@@ -7,7 +7,7 @@ main:
     url: /teaching/ 
     
   - title: "CV"
-    url: /cv/    
+    url: "/files/Esmaeil_Izadi_CV.pdf"  
     
   - title: "Blog posts"
     url: /blog/
