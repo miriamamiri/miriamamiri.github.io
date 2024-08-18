@@ -2,13 +2,16 @@
 main:
   - title: "Research"
     url: /research/ 
-
+    
+  - title: "Teaching"
+    url: /teaching/ 
+    
   - title: "CV"
     url: /cv/    
     
-  - title: "Posts"
-    url: /posts/
+  - title: "Blog posts"
+    url: /blog/
   
   - title: "یادداشت‌های فارسی"
-    url: /blog/
+    url: /persian/
    
