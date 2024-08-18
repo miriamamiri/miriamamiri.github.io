@@ -7,5 +7,5 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I'm an Economics PhD Candidate at Simon Fraser University. My research focuses on political economy of development and applied microeconomics utilizing tools from game theory, econometrics and statistical causal inference. 
+I am an Economics PhD Candidate at Simon Fraser University. My research focuses on the political economy and applied microeconomics. I use tools from game theory, econometrics, and statistical causal inference to explore questions in fields of political economy of development, applied microeconomics and strategic behaviors. 
 
