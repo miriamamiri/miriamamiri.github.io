@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: ""
-permalink: /blog/
+permalink: /persian/
 author_profile: true
 ---
  <div dir="rtl" lang="fa"> <b> برگه یادداشت‌های فارسی </b> </div>
