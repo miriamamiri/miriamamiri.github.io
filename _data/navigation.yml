@@ -1,15 +1,17 @@
 # main links links
 main:
+ 
+  
+  - title: "CV"
+    url: "/files/Esmaeil_Izadi_CV.pdf" 
+    
   - title: "Research"
     url: /research/ 
     
   - title: "Teaching"
     url: /teaching/ 
     
-  - title: "CV"
-    url: "/files/Esmaeil_Izadi_CV.pdf"  
-    
-  - title: "Blog posts"
+  - title: "Blog"
     url: /blog/
   
   - title: "یادداشت‌های فارسی"
