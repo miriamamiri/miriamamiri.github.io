@@ -5,9 +5,10 @@ permalink: /blog/
 author_profile: true
 ---
 
-**Unveiling Indonesia's Business-Political Connections: How Political Ties Influence Firm Performance**
 
 *This blog post is based on research conducted by my coauthors Addisu Lashitew, Rizal Shidiq, Eric Werker, and me, titled "Political Connections and Firm Performance in Indonesia: Evidence from a Novel Dataset on Political Connections."*
+
+**Unveiling Indonesia's Business-Political Connections: How Political Ties Influence Firm Performance**
 
 In Indonesia's dynamic economic environment, the intersection of business and politics raises important questions: How do political connections affect the performance of firms? Recent research into this relationship reveals patterns that highlight both the advantages and complexities of political ties in Indonesia.
 
