@@ -14,11 +14,7 @@ In Indonesia's dynamic economic environment, the intersection of business and po
 
 **The Debt Dynamics of Political Connections**
 Consider two firms—one with strong political connections and one without. The politically connected firm often secures better financing terms, reflected in a higher debt-to-equity ratio. These firms tend to have privileged access to loans, enabling them to leverage debt more effectively than their less-connected counterparts. This isn't just about knowing influential people; it's about gaining access to financial resources that others may find difficult to obtain.
-
-**Powerful Affiliations: The Impact of PDI-P and Gerindra**
 Not all political connections offer the same benefits. Ties to ruling parties, specifically the Partai Demokrasi Indonesia Perjuangan (PDIP), the Partai Golongan Karya (PGK), and Partai Hanura (PH) appear to have significant influence. Firms associated with these parties may receive advantages such as preferential loan terms or expedited approval processes, particularly when it comes to accessing debt financing.
-
-**The Nuances of Connection Strength and Type**
 The impact of political connections varies depending on their strength and nature. A direct link to a key political figure might provide more substantial benefits than a peripheral association. For example, having a board member who is a former government official could help navigate bureaucratic obstacles more effectively than a distant acquaintance. This means that the effects of political ties are not uniform but depend on the depth and context of the relationships.
 
 **The Challenge of Establishing Causality**
