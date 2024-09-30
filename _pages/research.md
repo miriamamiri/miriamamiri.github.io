@@ -18,9 +18,9 @@ author_profile: true
 ### Political Connections and Firm Performance in Indonesia: Evidence from a Novel Dataset on Political Connections (with Addisu Lashitew, Rizal Shidiq and Eric Werker)
 **Abstract.** 
 
-This paper examines the relationship between **political connections** and **firm performance** in Indonesia, utilizing a unique longitudinal dataset that tracks the vast network of connections between public firms and active politicians. We go beyond simply identifying connections to quantifying their strength and type, employing different definitions that capture formal and informal ties, as well as party affiliation and power dynamics. Our analysis focuses on the period from 2001 to 2019, encompassing multiple election cycles and changes in government. 
+This paper examines the relationship between political connections and firm performance in Indonesia, utilizing a unique longitudinal dataset that tracks the vast network of connections between public firms and active politicians. We go beyond simply identifying connections to quantifying their strength and type, employing different definitions that capture formal and informal ties, as well as party affiliation and power dynamics. Our analysis focuses on the period from 2001 to 2019, encompassing multiple election cycles and changes in government. 
 We find that connections to parties in power are particularly impactful, especially for accessing debt financing. Firms connected to the ruling coalition exhibit higher debt-to-equity ratios compared to their unconnected counterparts, suggesting preferential treatment in credit markets. Notably, this effect is more pronounced for connections to the Indonesian Democratic Party of Struggle (PDIP) and the Golkar Party (PGK), highlighting the importance of party-specific influence.  
-To address **causal inference challenges**, we employ a **Difference-in-Differences (DiD) approach** with firm and time fixed effects, interacting political connections with election outcomes to isolate the effects of changes in power dynamics. We further strengthen our identification strategy by instrumenting for political connections using industry-level measures of political engagement. This approach leverages exogenous variation in connection patterns across industries to mitigate concerns about unobserved firm-specific factors driving the results. 
+To address the threat of selection bias, we employ a Difference-in-Differences (DiD) approach with firm and time fixed effects, interacting political connections with unexpected election outcomes to make the changes in power dynamics quasi-exogenous. We further strengthen our identification strategy by instrumenting for political connections using industry-level measures of political engagement. This approach leverages exogenous variation in connection patterns across industries to mitigate concerns about unobserved firm-specific factors driving the results. 
 Our findings contribute to the understanding of how political connections operate in emerging markets, underscoring the importance of accounting for both the nature and the political context of these relationships when assessing their impact on firm performance. 
 
 # Work in Progress
@@ -28,7 +28,6 @@ Our findings contribute to the understanding of how political connections operat
 ## Applied Microeconomics
 
 ### Urban Renovation and Neighborhood Coordination: A Regression Discontinuity Study of Large-Scale Inner-City Renovation Project of Tehran, Iran
-### Social Projects and Neighborhood Response in Housing Market in British Columbia (with Fernando Aragon)
 
 ## Machine Learning
 ### Reinforcement Learning, Dynamic Pricing and Advertisement Strategy in Presence of Network Effects (with Ehsan Ardjmand, Ali Tavasoli, Heman Shakeri)
