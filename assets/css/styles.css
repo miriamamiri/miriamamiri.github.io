@@ -1,0 +1,81 @@
+/* Typography */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Spacing */
+section {
+  margin: 50px 0;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('your-image.jpg');
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* Buttons and Links */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Increase whitespace */
+body, p, h1, h2, h3 {
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    height: 300px;
+    padding: 50px 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}
