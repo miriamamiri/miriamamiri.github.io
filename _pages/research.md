@@ -23,12 +23,9 @@ We find that connections to parties in power are particularly impactful, especia
 To address the threat of selection bias, we employ a Difference-in-Differences (DiD) approach with firm and time fixed effects, interacting political connections with unexpected election outcomes to make the changes in power dynamics quasi-exogenous. We further strengthen our identification strategy by instrumenting for political connections using industry-level measures of political engagement. This approach leverages exogenous variation in connection patterns across industries to mitigate concerns about unobserved firm-specific factors driving the results. 
 Our findings contribute to the understanding of how political connections operate in emerging markets, underscoring the importance of accounting for both the nature and the political context of these relationships when assessing their impact on firm performance. 
 
-# Work in Progress
+# Works in Progress
 
-## Applied Microeconomics
+### Urban Renovation and Neighborhood Coordination: A Regression Discontinuity Study of Large-Scale Renovation Project in Tehran, Iran
 
-### Urban Renovation and Neighborhood Coordination: A Regression Discontinuity Study of Large-Scale Inner-City Renovation Project of Tehran, Iran
-
-## Machine Learning
-### Reinforcement Learning, Dynamic Pricing and Advertisement Strategy in Presence of Network Effects (with Ehsan Ardjmand, Ali Tavasoli, Heman Shakeri)
+### Reinforcement Learning and Dynamic Pricing in Presence of Network Effects (with Ehsan Ardjmand, Ali Tavasoli, Heman Shakeri)
 
