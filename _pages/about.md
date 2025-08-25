@@ -7,5 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am an Economics PhD Candidate at Simon Fraser University.
+Welcome to my academic website! 
+
+I am a PhD Economist at Simon Fraser University.
 
