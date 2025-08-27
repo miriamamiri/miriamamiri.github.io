@@ -10,11 +10,11 @@ locale                   : "en-US"
 title                    : "Esmaeil Izadi"
 title_separator          : "-"
 name                     : &name "Esmaeil"
-description              : &description "PhD Candidate in Economics at Simon Fraser University"
+description              : &description "PhD Economist, Simon Fraser University"
 url                      : https://esizadi.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "esizadi.github.io"
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "/images/Esmaeil-web.jpg"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -258,6 +258,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-seo-tag
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -265,7 +266,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
+  - jekyll-seo-tag
 
 # Archives
 #  Type

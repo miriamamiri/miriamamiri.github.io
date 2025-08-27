@@ -1,0 +1,24 @@
+<!-- _includes/tldr.html -->
+<style>
+  .tldr-box{
+    border:1px solid rgba(0,0,0,.08);
+    border-left:4px solid #4b9cff; /* subtle accent */
+    padding:.9rem 1rem;
+    margin:1rem 0 1.25rem;
+    background:rgba(0,0,0,.02);
+    border-radius:.5rem;
+    font-size:1.02rem;
+    line-height:1.5;
+  }
+  .tldr-label{
+    font-weight:600;
+    margin-right:.4rem;
+    text-transform:uppercase;
+    letter-spacing:.02em;
+  }
+</style>
+
+<div class="tldr-box">
+  <span class="tldr-label">Main idea:</span>
+  {{ include.text | default: page.tldr }}
+</div>

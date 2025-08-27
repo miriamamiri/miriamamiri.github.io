@@ -1,0 +1,3 @@
+/* custom site tweaks (kept tiny on purpose) */
+.page__content a { text-decoration: none; border-bottom: 1px solid rgba(0,0,0,.15); }
+.page__content a:hover { border-color: rgba(0,0,0,.35); }
