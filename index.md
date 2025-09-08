@@ -18,7 +18,7 @@ classes: wide
         aria-label="Pronounced Es-maa-ill">Es-maa-ill</span>
 </p>
 
-<p align="center">Economist at SFU. I think about individual and collective behaviours, markets and institutions.</p>
+<p align="center">I'm an economist thinking about how individuals and collectives shape policy and institutions.</p>
 
 <p align="center">
   I work on <strong>political economy</strong>, <strong>applied econometrics</strong>, and currently <strong>energy-transition</strong>.

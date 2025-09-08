@@ -10,7 +10,6 @@ areas:
   - "Applied game theory"
 excerpt: "Elites choose state- and nation-building; integration lowers coordination frictions, changing conflict into predictable redistribution."
 pdf: /files/papers/nation-state-building.pdf
-#slides: /files/slides/nsb_slides.pdf
 header:
   teaser: /images/research/nsb.png
 ---

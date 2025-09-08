@@ -11,8 +11,7 @@ areas:
   - "Causal inference"
   - "Firm Strategy"
 excerpt: "A novel index of political-connection in interaction with network structure; connections align with size and growth, more fruitful for firms in the peripheries of the business network."
-pdf: /files/papers/pc-indonesia.pdf           # ← put your PDF here later
-#slides: /files/slides/pc_indonesia_slides.pdf # optional
+pdf: /files/papers/pc-indonesia.pdf           
 header:
   teaser: /images/research/pc-indonesia.png   # optional card image
 ---
