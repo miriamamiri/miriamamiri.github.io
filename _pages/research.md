@@ -6,7 +6,7 @@ author_profile: false
 classes: wide
 ---
 
-{% assign papers = site.research | sort: "year" | reverse %}
+{% assign papers = site.research | sort: "date" | reverse %}
 
 {%- comment -%} Build a unique, sorted list of areas from all papers {%- endcomment -%}
 {% assign areas_concat = "" %}

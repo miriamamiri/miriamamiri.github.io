@@ -4,6 +4,7 @@ title: "Political Connections, Growth and Firm Network"
 coauthors: "Addisu Lashitew, Rizal Shidiq, Eric Werker"
 status: "Working paper"
 year: 2025
+date: 2025-06-24
 areas:
   - "Political economy"
   - "Network theory"

@@ -4,6 +4,7 @@ title: "Nation-State Building"
 coauthors: "Chris Bidner"
 status: "Working paper"
 year: 2025
+date: 2025-07-24
 areas:
   - "Political economy"
   - "Applied game theory"

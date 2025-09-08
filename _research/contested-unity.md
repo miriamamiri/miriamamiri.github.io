@@ -3,6 +3,7 @@ layout: single
 title: "Contested Unity"
 status: "Working paper"
 year: 2025
+date: 2025-08-24
 areas:
   - "Political economy"
   - "Applied game theory"

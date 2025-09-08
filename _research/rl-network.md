@@ -4,6 +4,7 @@ title: "Reinforcement Learning for Consumer Influence: Pricing, Advertising, and
 coauthors: "Ehsan Ardjmand, Ali Tavasoli, Behnaz Moradi-Jamei, Heman Shakeri"
 status: "Under 2nd round review"
 year: 2025
+date: 2025-06-24
 areas:
   - "Deep learning"
   - "Network theory"
