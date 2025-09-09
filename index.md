@@ -14,7 +14,8 @@ classes: wide
   .hero{
     background:
       linear-gradient(0deg, rgba(0,0,0,.46), rgba(0,0,0,.46)),
-      url('/images/hero-lashayi.jpg') center 30%/cover no-repeat; /* change path if needed */
+      url('/images/Mamasani-tower-Eugène-Flandin.jpg') center 100%/cover no-repeat; /* change path if needed */
+    /* background-attachment: fixed; /* add this line */
     min-height: clamp(520px, 82vh, 900px);
     margin-left: calc(50% - 50vw);
     width: 100vw;
