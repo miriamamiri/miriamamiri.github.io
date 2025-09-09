@@ -14,7 +14,7 @@ classes: wide
   .hero{
     background:
       linear-gradient(0deg, rgba(0,0,0,.46), rgba(0,0,0,.46)),
-      url('/images/hero.jpg') center 70%/cover no-repeat; /* change path if needed */
+      url('/images/hero-lashayi.jpg') center 30%/cover no-repeat; /* change path if needed */
     min-height: clamp(520px, 82vh, 900px);
     margin-left: calc(50% - 50vw);
     width: 100vw;
@@ -77,9 +77,9 @@ classes: wide
   .hero__links a{
     color:#fff; text-decoration:none;
     border:1px solid rgba(255,255,255,.45);
-    border-radius:999px; padding:.3rem .75rem; font-size:.95rem;
+    border-radius:999px; padding:.4rem .75rem; font-size:.95rem;
   }
-  .hero__links a:hover{ background: rgba(255,255,255,.08); }
+  .hero__links a:hover{ background: rgba(255, 255, 255, 0.33); }
 
   /* Mobile */
   @media (max-width: 820px){
