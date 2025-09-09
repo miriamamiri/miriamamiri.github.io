@@ -1,53 +1,119 @@
 ---
 layout: single
-title: "Call me Esmaeil!"
+title: ""            # no page H1; hero owns the page
 permalink: /
 author_profile: false
 classes: wide
 ---
 
-<!-- hero -->
-<p align="center">
-  <img src="/images/Esmaeil-web.jpg"
-       alt="Esmaeil Izadi"
-       style="width:230px;height:230px;border-radius:50%;object-fit:cover;box-shadow:0 4px 12px rgba(0,0,0,.08);margin:0.5rem 0 .35rem;" />
-</p>
-
-<p align="center" style="margin:.1rem 0 .9rem;">
-  <span style="display:inline-block;padding:.2rem .55rem;border:1px solid rgba(0,0,0,.15);border-radius:999px;color:#555;font-size:.9rem;"
-        aria-label="Pronounced Es-maa-ill">Es-maa-ill</span>
-</p>
-
-<p align="center">I'm an economist thinking about how individuals and collectives shape policy and institutions.</p>
-
-<p align="center">
-  I work on <strong>political economy</strong>, <strong>applied econometrics</strong>, and currently <strong>energy-transition</strong>.
-</p>
-
-<p align="center">Vancouver, BC · ✉️ <a href="mailto:eizadi@sfu.ca">eizadi@sfu.ca</a></p>
-
-<hr style="margin:1rem 0 1.2rem; border:0; border-top:1px solid rgba(0,0,0,.08)">
-
-<!-- From the notebook -->
 <style>
-  .latest-list{list-style:none; margin:.2rem 0 0; padding:0}
-  .latest-list li{padding:.45rem 0; border-top:1px solid rgba(0,0,0,.08)}
-  .latest-list li:first-child{border-top:0}
-  .latest-list a{text-decoration:none; border-bottom:1px solid rgba(0,0,0,.15)}
-  .latest-list a:hover{border-color:rgba(0,0,0,.35)}
-  .latest-list .meta{color:#777; font-size:.92rem}
+  /* Hide the masthead only on this page */
+  .masthead{ display:none !important; }
+
+  /* Full-bleed hero */
+  .hero{
+    background:
+      linear-gradient(0deg, rgba(0,0,0,.46), rgba(0,0,0,.46)),
+      url('/images/hero.jpg') center 70%/cover no-repeat; /* change path if needed */
+    min-height: clamp(520px, 82vh, 900px);
+    margin-left: calc(50% - 50vw);
+    width: 100vw;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+  html, body { overflow-x: hidden; } /* prevent horiz scrollbars */
+
+  /* Fluid grid */
+  .hero__inner{
+    width: min(1200px, 94vw);
+    margin: 0 auto;
+    padding: clamp(1.2rem, 3.2vw, 3rem) clamp(1rem, 3vw, 2rem);
+    display: grid;
+    grid-template-columns: clamp(260px, 26vw, 380px) 1fr; /* left grows with screen */
+    gap: clamp(1rem, 2.6vw, 3rem);
+    color:#fff;
+  }
+
+  /* Left card */
+  .hero__card{
+    background: rgba(0,0,0,.25);
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:14px;
+    padding: clamp(.9rem, 1.5vw, 1.1rem);
+    text-align:center;
+    backdrop-filter: blur(4px);
+  }
+  .hero__card img{
+    width: clamp(180px, 18vw, 260px);  /* larger portrait */
+    height: clamp(180px, 18vw, 260px);
+    border-radius:40%;
+    object-fit:cover;
+    box-shadow:0 6px 18px rgba(0,0,0,.35);
+    margin:.25rem 0 .6rem;
+  }
+  .hero__card .lead {
+    font-size: clamp(0.8rem, 2vw, 1.3rem);
+    margin-bottom: 0.4rem;
+  }
+  .hero__contact a{
+    color:#fff; text-decoration:none; border-bottom:1px solid rgba(255,255,255,.55);
+  }
+
+  /* Right text */
+  .hero__text{ max-width: 62ch; }
+  .hero__text .lead{
+    font-size: clamp(1.25rem, 2.4vw, 1.7rem);  /* slightly larger than body */
+    line-height: 1.65;
+    margin: 2rem 0;
+  }
+  .hero__text p{
+    font-size: clamp(1rem, 1.08vw, 1.12rem);
+    line-height: 1.65;
+    margin:.2rem 0;
+  }
+
+  /* Minimal links row */
+  .hero__links{ margin-top:.9rem; display:flex; flex-wrap:wrap; gap:.5rem }
+  .hero__links a{
+    color:#fff; text-decoration:none;
+    border:1px solid rgba(255,255,255,.45);
+    border-radius:999px; padding:.3rem .75rem; font-size:.95rem;
+  }
+  .hero__links a:hover{ background: rgba(255,255,255,.08); }
+
+  /* Mobile */
+  @media (max-width: 820px){
+    .hero__inner{ grid-template-columns: 1fr; gap: 1rem; }
+    .hero__text{ max-width: 70ch; }
+  }
 </style>
 
-### From the blog
+<section class="hero">
+  <div class="hero__inner">
+    <!-- LEFT: photo + contact -->
+    <aside class="hero__card">
+      <img src="/images/Esmaeil-web.jpg" alt="Esmaeil Izadi">
+      <p class="lead"><strong>Call me Esmaeil!</strong></p> <!-- moved here -->
+      <div class="hero__contact" style="margin-top:.35rem;">
+        Vancouver, BC · ✉️ <a href="mailto:esmaeil_izadi@sfu.ca">esmaeil_izadi@sfu.ca</a>
+      </div>
+    </aside>
 
-{% assign docs = site.blog | sort: "date" | reverse %}
-<ul class="latest-list">
-{% for post in docs limit:2 %}
-  <li>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <span class="meta"> — {{ post.date | date: "%b %-d, %Y" }}</span>
-  </li>
-{% endfor %}
-</ul>
+    <!-- RIGHT: minimal text + links -->
+    <div class="hero__text">
+      <p>I'm a <strong>job market candidate</strong> in economics at Simon Fraser University. </p>
+      
+      <p>My research interests include <strong>political economy</strong> of development, firm strategy and networks, and energy transition.</p>
 
-<p><a href="/blog/">View all posts →</a></p>
+      <p>The common theme in my work is how political and economic elites influence market and societal outcomes. I use <strong>applied micro</strong> theory and econometrics to explore questions.</p>
+
+      <nav class="hero__links">
+        <a href="/cv/">CV</a>
+        <a href="/research/">Research</a>
+        <a href="/blog/">Blog</a>
+        <a href="/teaching/">Teaching</a>
+        <a href="/fa/">یاداشت‌های فارسی</a>
+      </nav>
+    </div>
+  </div>
+</section>
