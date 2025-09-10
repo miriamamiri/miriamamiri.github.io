@@ -8,7 +8,7 @@ date: 2025-07-24
 areas:
   - "Political economy"
   - "Applied game theory"
-excerpt: "Elites choose state- and nation-building; integration lowers coordination frictions, changing conflict into predictable redistribution."
+excerpt: "We develop a simple dynamic theory of Nation-States in which Elites choose investments in both State-building and Nation-building. In our approach nation-building works towards homogenization of citizens by making it easier for them to coordinate and demand for more frequent redistributions. A more coordinated citizenry will accept lower transfers in the current period, making it possible for the Elites to pacify their threats. Our mechanism puts the emphasis on social conflicts rather than external threats in the emergence of nation-building investments. It also highlights the role of nation-building in changing the (coordination) technology rather than altering the preferences and indoctrinating the citizens. We define state capacity with its role in lowering the cost of redistribution and show how investments in nation-building can incentivize the Elite to further invest in state-building. Nation-State building is thus embodiment of this complementarity."
 pdf: /files/papers/nation-state-building.pdf
 header:
   teaser: /images/research/nsb.png
@@ -22,3 +22,5 @@ header:
 
 ### Abstract
 We develop a simple dynamic theory of Nation-States in which Elites choose investments in both State-building and Nation-building. In our approach nation-building works towards homogenization of citizens by making it easier for them to coordinate and demand for more frequent redistributions. A more coordinated citizenry will accept lower transfers in the current period, making it possible for the Elites to pacify their threats. Our mechanism puts the emphasis on social conflicts rather than external threats in the emergence of nation-building investments. It also highlights the role of nation-building in changing the (coordination) technology rather than altering the preferences and indoctrinating the citizens. We define state capacity with its role in lowering the cost of redistribution and show how investments in nation-building can incentivize the Elite to further invest in state-building. Nation-State building is thus embodiment of this complementarity.
+
+<!--abs-->

@@ -8,88 +8,92 @@ classes: wide
 
 {% assign papers = site.research | sort: "date" | reverse %}
 
-{%- comment -%} Build a unique, sorted list of areas from all papers {%- endcomment -%}
-{% assign areas_concat = "" %}
-{% for p in papers %}
-  {% if p.areas %}
-    {% for a in p.areas %}
-      {% assign areas_concat = areas_concat | append: a | append: "|" %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
-{% assign areas = areas_concat | split: "|" | uniq | sort %}
-
 <style>
-  .pillnav{display:flex;flex-wrap:wrap;gap:.4rem;margin:.25rem 0 1rem}
-  .pillnav a{padding:.25rem .6rem;border:1px solid rgba(0,0,0,.15);border-radius:999px;text-decoration:none;color:inherit}
-  .pillnav a.active,.pillnav a:hover{background:#f6f7f9;border-color:rgba(0,0,0,.25)}
-  .paper-list{list-style:none;margin:.2rem 0 1.2rem 0;padding:0}
-  .paper-item{padding:.6rem 0;border-top:1px solid rgba(0,0,0,.08)}
-  .paper-item:first-child{border-top:0}
-  .meta{color:#666;font-size:.95rem}
-  .abs{margin:.35rem 0 .5rem;color:#333}
-  .btn{display:inline-block;border:1px solid rgba(0,0,0,.15);border-radius:999px;padding:.3rem .65rem;font-size:.9rem;text-decoration:none;margin-right:.35rem}
-  .btn.soft{background:#f6f7f9}
+  /* Minimal, quiet styling */
+  .research-wrap{max-width:820px;margin:0 auto}
+  .paper-list{list-style:none;margin:0;padding:0}
+  .paper{padding:1rem 0;border-top:1px solid rgba(0,0,0,.08)}
+  .paper:first-child{border-top:0}
+  .paper-title{font-weight:600;text-decoration:none;color:inherit}
+  .paper-title:hover{opacity:.85}
+  .meta{display:block;margin-top:.15rem;color:#666;font-size:.95rem}
+  .actions{margin-top:.6rem;display:flex;gap:.5rem}
+  .btn{
+    display:inline-block;
+    border:1px solid rgba(0,0,0,.15);
+    border-radius:999px;
+    padding:.38rem .8rem;
+    font-size:.92rem;
+    text-decoration:none;
+    line-height:1;
+    color:inherit;                    /* <-- makes <a> match <button> */
+    background:#4e5765;               /* <-- same fill for both */
+  }
+  .btn:hover{background:#eef0f3}
+  a.btn:visited{color:inherit}
+  .abstract{margin-top:.6rem;color:#333}
+  .abstract[hidden]{display:none !important}
 </style>
 
-<!-- Areas (filters). Click to narrow the list below. -->
-<nav class="pillnav">
-  <a href="#all" data-filter="">All</a>
-  {% for area in areas %}{% if area != "" %}
-    <a href="#area-{{ area | slugify }}" data-filter="{{ area | slugify }}">{{ area }}</a>
-  {% endif %}{% endfor %}
-</nav>
+<div class="research-wrap">
+  <ul class="paper-list">
+  {% for p in papers %}
+    {% assign slug = p.title | slugify %}
+    {% assign abstract_text = p.abstract | default: p.excerpt %}
+    <li class="paper">
+      <a class="paper-title" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+      <span class="meta">
+        {% if p.status or p.year %}
+          {% if p.status %}{{ p.status }}{% endif %}
+          {% if p.year %}{% if p.status %} · {% endif %}{{ p.year }}{% endif %}
+        {% endif %}
+        {% if p.coauthors %} · with {{ p.coauthors }}{% endif %}
+      </span>
 
-<ul class="paper-list" id="paper-list">
-{% for p in papers %}
-  {%- comment -%} Build slug list for this paper's areas {%- endcomment -%}
-  {% assign slugs = "" %}
-  {% if p.areas %}
-    {% for a in p.areas %}
-      {% assign sa = a | slugify %}
-      {% if forloop.first %}
-        {% assign slugs = sa %}
-      {% else %}
-        {% assign slugs = slugs | append:"|" | append: sa %}
+      <div class="actions">
+        {% if p.pdf %}
+          <a class="btn" href="{{ p.pdf | relative_url }}" target="_blank" rel="noopener">Full text (PDF)</a>
+        {% endif %}
+        {% if abstract_text %}
+          <button
+            type="button"
+            class="btn soft js-abs-toggle"
+            aria-controls="abs-{{ slug }}"
+            aria-expanded="false"
+            data-target="abs-{{ slug }}">
+            Show abstract
+          </button>
+        {% endif %}
+      </div>
+
+      {% if abstract_text %}
+        <div id="abs-{{ slug }}" class="abstract" hidden>
+          {{ abstract_text | markdownify }}
+        </div>
       {% endif %}
-    {% endfor %}
-  {% endif %}
-
-  <li class="paper-item" data-areas="{{ slugs }}">
-    <a href="{{ p.url | relative_url }}"><strong>{{ p.title }}</strong></a>
-    {% if p.status or p.year %}<span class="meta"> — {% if p.status %}{{ p.status }}{% endif %}{% if p.year %}{% if p.status %} · {% endif %}{{ p.year }}{% endif %}</span>{% endif %}
-    {% if p.coauthors %}<span class="meta"> · with {{ p.coauthors }}</span>{% endif %}
-    {% if p.excerpt %}<div class="abs">{{ p.excerpt | strip_html | strip_newlines }}</div>{% endif %}
-    <div class="links">
-      {% if p.pdf %}<a class="btn" href="{{ p.pdf | relative_url }}">PDF</a>{% endif %}
-      {% if p.slides %}<a class="btn soft" href="{{ p.slides | relative_url }}">Slides</a>{% endif %}
-      {% if p.code %}<a class="btn soft" href="{{ p.code }}">Code</a>{% endif %}
-    </div>
-  </li>
-{% endfor %}
-</ul>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
 
 <script>
-(function(){
-  function currentFilter(){
-    if(location.hash && location.hash.indexOf('#area-')===0){
-      return location.hash.replace('#area-','');
+  // Minimal vanilla JS to toggle abstracts inline
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.js-abs-toggle');
+    if(!btn) return;
+    var id = btn.getAttribute('data-target');
+    var box = document.getElementById(id);
+    if(!box) return;
+
+    var isHidden = box.hasAttribute('hidden');
+    if(isHidden){
+      box.removeAttribute('hidden');
+      btn.setAttribute('aria-expanded','true');
+      btn.textContent = 'Hide abstract';
+    }else{
+      box.setAttribute('hidden','');
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent = 'Show abstract';
     }
-    return "";
-  }
-  function applyFilter(slug){
-    var items = document.querySelectorAll('.paper-item');
-    items.forEach(function(el){
-      var areas = (el.getAttribute('data-areas')||'').split('|').filter(Boolean);
-      var show = !slug || areas.includes(slug);
-      el.style.display = show ? "" : "none";
-    });
-    document.querySelectorAll('.pillnav a').forEach(function(a){
-      a.classList.toggle('active', (a.getAttribute('data-filter')||"") === slug);
-    });
-  }
-  // init + respond to hash changes
-  applyFilter(currentFilter());
-  window.addEventListener('hashchange', function(){ applyFilter(currentFilter()); });
-})();
+  }, false);
 </script>
