@@ -47,8 +47,9 @@ classes: wide
   .hero__card img{
     width: clamp(180px, 18vw, 260px);  /* larger portrait */
     height: clamp(180px, 18vw, 260px);
-    border-radius:40%;
+    border-radius:30%;
     object-fit:cover;
+    object-position: 50% 20%; /* show more of the top part */
     box-shadow:0 6px 18px rgba(0,0,0,.35);
     margin:.25rem 0 .6rem;
   }
@@ -93,7 +94,7 @@ classes: wide
   <div class="hero__inner">
     <!-- LEFT: photo + contact -->
     <aside class="hero__card">
-      <img src="/images/Esmaeil-web.jpg" alt="Esmaeil Izadi">
+      <img src="/images/Izzy.jpg" alt="Esmaeil Izadi">
       <p class="lead"><strong>Call me Esmaeil!</strong></p> <!-- moved here -->
       <div class="hero__contact" style="margin-top:.35rem;">
         Vancouver, BC · ✉️ <a href="mailto:esmaeil_izadi@sfu.ca">esmaeil_izadi@sfu.ca</a>
