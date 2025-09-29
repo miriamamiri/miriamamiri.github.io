@@ -1,11 +1,12 @@
 ---
 layout: single
-title: "On the Edge of the Neighborhood"
+title: "Political Economy in Perspective"
 date: 2025-09-28
-excerpt: "A 19th-century painting by Eugène Flandin, titled Mamasani Tower, shows the city where I was born. The painter’s vantage point could have been the hillside above my childhood neighborhood. What he saw, and what he could not see, tells something about how I think of political economy."
+featured: true
+excerpt: "A 19th-century painting by Eugène Flandin, titled Mamasani Tower, shows the city where I was born. The painter’s vantage point could have been a farm right outside my childhood neighborhood."
 header:
   teaser: images\blog\Mamasani-tower-Eugène-Flandin.jpg
-tldr: "A 19th-century lithograph by Eugène Flandin, titled Mamasani Tower, shows the city where I was born. The painter’s vantage point could have been the hillside above my childhood neighborhood. What he saw, and what he could not see, tells something about how I think of political economy. For me, the image is a reminder that individual choices are never separate from the structures around them, and that development must be understood from both the edge and the center."
+tldr: "A 19th-century lithograph by Eugène Flandin, titled Mamasani Tower, shows the city where I was born. The painter’s vantage point could have been a farm right outside my childhood neighborhood. What he saw, and what he could not see, tells something about how I think of political economy. That models tell you a stylized story, but history of a place demands much more than that."
 ---
 
 {% include tldr.html %}
@@ -15,7 +16,7 @@ tldr: "A 19th-century lithograph by Eugène Flandin, titled Mamasani Tower, show
        style="max-width:100%; border-radius:.5rem; box-shadow:0 8px 24px rgba(0,0,0,.08); margin:.2rem 0 1rem;" />
 </p>
 
-The image on this page is a lithograph by Eugène Flandin from 1840, titled Mamasani Tower. To most, it is an obscure work by a French orientalist. To me, it was a shock. I was born in this city. The painter’s vantage point could easily be a hillside above the neighborhood where I grew up, facing the same mountains. The town has changed since then. There is no trace of the walled city or its castle. Yet the shrine, Imam-zadeh Darvaze Ahani, still stood in my childhood, shapeless but present, especially during ceremonies.
+The image on this page is a lithograph by Eugène Flandin from 1840, titled Mamasani Tower. To most, it is an obscure work by a French orientalist. To me, it was a shock. I was born in this city. The painter’s vantage point could easily be a farm right outside the neighborhood where I grew up, facing the same mountains. The town has changed since then. There is no trace of the walled city or its castle. Yet the shrine, Imam-zadeh Darvaze Ahani, still stood in my childhood, shapeless but present, especially during ceremonies.
 
 This painting shows a scene just outside the city walls. That is how my childhood felt. I was at the edge of the city, yet in the middle of the ties that made it what it was: working people, farms, and those moving in and out to serve, consult, or seek justice from the ruling powers. Finding this image later became a framing experience for me. It shaped how I think about development. As a teenager in Mamasani, I sensed imbalance. Some were rural, others urban. Some were prosperous, many were not. I wondered: why cannot everyone, or at least we, be prosperous? What is allowed, and who decides? These questions grew sharper as I watched the political turmoil of my youth, from 2 Khordad 1376 to the end of the Khatami era. Later, I learned the vocabulary for what I had sensed: individual behavior is not free floating. It is shaped by political structures that set the incentives. That is political economy.
 
