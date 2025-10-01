@@ -1,5 +1,6 @@
 ---
 layout: single
+featured: true
 title: "Political Connections, Firm Networks, and Growth"
 date: 2025-07-24
 excerpt: "Power-weighted connections + networks align with size and leverage; networks can substitute for weak institutions."
