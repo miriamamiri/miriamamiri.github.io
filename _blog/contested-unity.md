@@ -19,7 +19,7 @@ header:
 
 ### Imagined communities, then a nagging question
 
-Like many, I first met nationalism through Benedict Anderson’s *Imagined Communities*. It’s a beautiful idea: strangers acting as if they belong to the same “we,” and building institutions on top of that shared imagination. After finishing a paper on the **institution of the nation-state** (the figure above is from related work using Wimmer’s data), I kept circling the next question: *what do we actually mean by national identity—at least in economics?*
+After finishing a paper on the **institution of the nation-state** (the figure above is created from the data in a related work by Andreas Wimmer), I kept circling the next question: *what do we actually mean by national identity—at least in economics?*
 
 > “Nationalism: an infantile disease. It is the measles of mankind.” — *Albert Einstein*
 

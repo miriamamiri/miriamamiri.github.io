@@ -194,10 +194,10 @@ html, body { overflow-x: hidden; }
 
     <!-- CENTER: intro -->
     <div class="hero__text">
-        <p>I’m a <strong>PhD economist</strong> from Simon Fraser University. My research sits at the intersection of analytical social science and applied economics, focusing on how political and economic elites shape <strong>markets</strong>, <strong>institutions</strong>, and <strong>policies</strong>.</p>
+        <p>I’m a <strong>PhD economist</strong> from Simon Fraser University and I'm on the 2025-2025 job market. My research sits at the intersection of analytical social science and applied economics, focusing on how political and economic elites shape <strong>markets</strong>, <strong>institutions</strong>, and <strong>policies</strong>.</p>
 
 
-  <p>Methodologically, I use applied formal theory, structural modeling and applied econometrics. These tools help me frame questions rigorously, design policy-relevant analyses, and test policies with evidence-based approaches.</p>
+  <p>Methodologically, I use applied formal theory, structural modeling and applied econometrics. These tools help me frame important questions, design relevant analyses, and test policies with evidence-based approaches.</p>
     </div>
 
     <!-- RIGHT: floating links -->
