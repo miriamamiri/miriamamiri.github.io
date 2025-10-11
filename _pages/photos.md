@@ -1,5 +1,5 @@
 ---
-title: "Archive Layout with Content"
+title: "My Photography"
 layout: archive
 permalink: /archive-layout-with-content/
 ---
