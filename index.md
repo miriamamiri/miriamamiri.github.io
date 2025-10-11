@@ -25,7 +25,7 @@ html, body { overflow-x: hidden; }
   color: var(--ink);
   background:
     linear-gradient(0deg, var(--bg-dim), var(--bg-dim)),
-    url('/images/Mamasani-tower-Eugène-Flandin.jpg') center 100%/cover no-repeat;
+    url('/images/hero.jpg') center 100%/cover no-repeat;
   min-height: clamp(520px, 82vh, 900px);
   margin-left: calc(50% - 50vw);
   width: 100vw;
@@ -142,10 +142,10 @@ html, body { overflow-x: hidden; }
   <div class="hero__inner">
     <!-- LEFT: profile -->
     <aside class="hero__card">
-      <img src="/images/Izzy.jpg" alt="Esmaeil Izadi">
-      <div class="title">Esmaeil Izadi</div>
+      <img src="/images/Mar PrPic.jpg" alt="Maryam Amiri">
+      <div class="title">Maryam Amiri</div>
       <div class="hero__contact">
-  Vancouver, BC, Canada <a href="mailto:esmaeil_izadi@sfu.ca">esmaeil_izadi@sfu.ca</a><br>
+  Vancouver, BC, Canada <a href="mailto:amirimaryam.upe@gmail.com">amirimaryam.upe@gmail.com</a><br>
 
   <!-- LinkedIn -->
   <a href="https://www.linkedin.com/in/esiz/" target="_blank" rel="noopener" aria-label="LinkedIn" style="margin-right: .5rem;">
