@@ -206,6 +206,7 @@ html, body { overflow-x: hidden; }
       <a href="/research/">Research</a>
       <a href="/teaching/">Teaching</a>
       <a href="/blog/">Blog</a>
+      <a href="/blog/">My Photos</a>
       <a href="/fa/">یادداشت‌های فارسی</a>
     </nav>
   </div>
