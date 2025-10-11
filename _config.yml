@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Esmaeil Izadi"
+title                    : "Maryam Amiri"
 title_separator          : "-"
 name                     : &name "Esmaeil"
 description              : &description "PhD Economist, Simon Fraser University"
-url                      : https://esizadi.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://maryamamiri.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "esizadi.github.io"
+repository               : "maryamamiri.github.io"
 teaser                   : "/images/Esmaeil-web.jpg"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
