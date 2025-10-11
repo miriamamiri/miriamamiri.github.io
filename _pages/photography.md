@@ -76,3 +76,6 @@ permalink: /photography/
     actualSize: false
   });
 </script>
+<div class="swiper-slide">
+  <img src="{{ '/assets/photography/full/004.jpg' | relative_url }}" alt="Featured photo 4">
+</div>
