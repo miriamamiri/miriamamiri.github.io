@@ -11,7 +11,7 @@ title                    : "Maryam Amiri"
 title_separator          : "-"
 name                     : &name "Maryam"
 description              : &description "PhD Urban studies"
-url                      : https://miriamamiri.github.io
+url                      : "https://miriamamiri.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "miriamamiri.github.io"
 teaser                   : "/images/Esmaeil-web.jpg"
