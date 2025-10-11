@@ -38,13 +38,13 @@ permalink: /photography/
   <!-- LightGallery target -->
   <div id="lightgallery" class="gallery-grid">
     <!-- Each anchor: data-src points to large file, <img> shows the thumbnail -->
-    <a href="#" data-src="{{ '/assets/photography/full/001.jpg' | relative_url }}" data-sub-html="Caption one">
+    <a href="#" data-src="{{ '/assets/photography/full/esiz.JPG' | relative_url }}" data-sub-html="Caption one">
       <img src="{{ '/assets/photography/thumbs/001.jpg' | relative_url }}" alt="Photo 1">
     </a>
-    <a href="#" data-src="{{ '/assets/photography/full/002.jpg' | relative_url }}" data-sub-html="Caption two">
+    <a href="#" data-src="{{ '/assets/photography/full/office.jpeg' | relative_url }}" data-sub-html="Caption two">
       <img src="{{ '/assets/photography/thumbs/002.jpg' | relative_url }}" alt="Photo 2">
     </a>
-    <a href="#" data-src="{{ '/assets/photography/full/003.jpg' | relative_url }}" data-sub-html="Caption three">
+    <a href="#" data-src="{{ '/assets/photography/full/hero.jpg' | relative_url }}" data-sub-html="Caption three">
       <img src="{{ '/assets/photography/thumbs/003.jpg' | relative_url }}" alt="Photo 3">
     </a>
     <!-- Add more blocks as you add photos -->
