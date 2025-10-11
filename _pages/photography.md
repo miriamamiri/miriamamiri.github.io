@@ -14,13 +14,13 @@ permalink: /photography/
     <div class="swiper-wrapper">
       <!-- Replace sample images with yours -->
       <div class="swiper-slide">
-        <img src="{{ '/assets/photography/full/001.jpg' | relative_url }}" alt="Featured photo 1">
+        <img src="{{ '/assets/photography/full/esiz.JPG' | relative_url }}" alt="Featured photo 1">
       </div>
       <div class="swiper-slide">
-        <img src="{{ '/assets/photography/full/002.jpg' | relative_url }}" alt="Featured photo 2">
+        <img src="{{ '/assets/photography/full/office.jpeg' | relative_url }}" alt="Featured photo 2">
       </div>
       <div class="swiper-slide">
-        <img src="{{ '/assets/photography/full/003.jpg' | relative_url }}" alt="Featured photo 3">
+        <img src="{{ '/assets/photography/full/hero.jpg' | relative_url }}" alt="Featured photo 3">
       </div>
     </div>
     <!-- Nav -->
