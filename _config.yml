@@ -9,9 +9,9 @@
 locale                   : "en-US"
 title                    : "Maryam Amiri"
 title_separator          : "-"
-name                     : &name "Esmaeil"
-description              : &description "PhD Economist, Simon Fraser University"
-url                      : https://maryamamiri.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Maryam"
+description              : &description "PhD Urban studies"
+url                      : https://maryamamiri.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "maryamamiri.github.io"
 teaser                   : "/images/Esmaeil-web.jpg"
@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : 
   googlescholar    : 
-  email            : "esmaeil_izadi@sfu.ca"
+  email            : "amirimaryam.upe@gmail.com"
   foursquare       :
   github           : 
   google_plus      :
