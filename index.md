@@ -50,11 +50,11 @@ html, body { overflow-x: hidden; }
   backdrop-filter: blur(6px);
 }
 .hero__card img{
-  width: clamp(180px, 18vw, 260px);
-  height: clamp(180px, 18vw, 260px);
-  border-radius: 28%;
+  width: clamp(180px, 18vw, 260px);  /* sets max width */
+  height: auto;                      /* keeps natural ratio */
+  border-radius: 18px;                /* rectangular corners */
   object-fit: cover;
-  object-position: 50% 20%;
+  object-position: center top;
   margin: .25rem 0 .8rem;
   border: 2px solid rgba(255,255,255,.08);
 }
