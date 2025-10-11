@@ -142,13 +142,13 @@ html, body { overflow-x: hidden; }
   <div class="hero__inner">
     <!-- LEFT: profile -->
     <aside class="hero__card">
-      <img src="/images/Mar PrPic.jpg" alt="Maryam Amiri">
+      <img src="/images/Mar.jpg" alt="Maryam Amiri">
       <div class="title">Maryam Amiri</div>
       <div class="hero__contact">
   Vancouver, BC, Canada <a href="mailto:amirimaryam.upe@gmail.com">amirimaryam.upe@gmail.com</a><br>
 
   <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/esiz/" target="_blank" rel="noopener" aria-label="LinkedIn" style="margin-right: .5rem;">
+  <a href="[https://www.linkedin.com/in/esiz/](https://www.linkedin.com/in/maryam-amiri-phd-52040a60/)" target="_blank" rel="noopener" aria-label="LinkedIn" style="margin-right: .5rem;">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle;">
       <path d="M19 0h-14c-2.761 0-5 2.239-5 
                5v14c0 2.761 2.239 5 5 5h14c2.762 
@@ -165,7 +165,7 @@ html, body { overflow-x: hidden; }
   </a>
 
   <!-- GitHub -->
-  <a href="https://github.com/esizadi" target="_blank" rel="noopener" aria-label="GitHub">
+  <a href="https://github.com/miriamamiri" target="_blank" rel="noopener" aria-label="GitHub">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle;">
       <path d="M12 .297c-6.63 0-12 5.373-12 
                12 0 5.303 3.438 9.8 8.205 
