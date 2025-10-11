@@ -10,9 +10,10 @@ permalink: /photography/
 
 <div class="hero-slider">
   <div class="section-title">Featured</div>
+
+  <!-- Swiper container -->
   <div class="swiper">
     <div class="swiper-wrapper">
-      <!-- Replace sample images with yours -->
       <div class="swiper-slide">
         <img src="{{ '/assets/photography/full/esiz.JPG' | relative_url }}" alt="Featured photo 1">
       </div>
@@ -23,10 +24,8 @@ permalink: /photography/
         <img src="{{ '/assets/photography/full/hero.jpg' | relative_url }}" alt="Featured photo 3">
       </div>
     </div>
-    <!-- Nav -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-    <!-- Pagination -->
     <div class="swiper-pagination"></div>
   </div>
 </div>
@@ -35,19 +34,16 @@ permalink: /photography/
   <div class="section-title">Gallery</div>
   <p class="subtle">Click any image to open the lightbox.</p>
 
-  <!-- LightGallery target -->
   <div id="lightgallery" class="gallery-grid">
-    <!-- Each anchor: data-src points to large file, <img> shows the thumbnail -->
-    <a href="#" data-src="{{ '/assets/photography/full/esiz.JPG' | relative_url }}" data-sub-html="Caption one">
+    <a href="{{ '/assets/photography/full/esiz.JPG' | relative_url }}" data-sub-html="Caption one">
       <img src="{{ '/assets/photography/thumbs/001.jpg' | relative_url }}" alt="Photo 1">
     </a>
-    <a href="#" data-src="{{ '/assets/photography/full/office.jpeg' | relative_url }}" data-sub-html="Caption two">
+    <a href="{{ '/assets/photography/full/office.jpeg' | relative_url }}" data-sub-html="Caption two">
       <img src="{{ '/assets/photography/thumbs/002.jpg' | relative_url }}" alt="Photo 2">
     </a>
-    <a href="#" data-src="{{ '/assets/photography/full/hero.jpg' | relative_url }}" data-sub-html="Caption three">
+    <a href="{{ '/assets/photography/full/hero.jpg' | relative_url }}" data-sub-html="Caption three">
       <img src="{{ '/assets/photography/thumbs/003.jpg' | relative_url }}" alt="Photo 3">
     </a>
-    <!-- Add more blocks as you add photos -->
   </div>
 </div>
 
@@ -57,16 +53,17 @@ permalink: /photography/
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/plugins/zoom/lg-zoom.min.js"></script>
 
 <script>
-  // Slider
+  // Swiper: keep natural aspect ratio using autoHeight
   const swiper = new Swiper('.swiper', {
     loop: true,
     speed: 500,
     grabCursor: true,
+    autoHeight: true, // <- important: adapt slider height to each image
     pagination: { el: '.swiper-pagination', clickable: true },
     navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
   });
 
-  // Lightbox
+  // LightGallery
   lightGallery(document.getElementById('lightgallery'), {
     selector: 'a',
     download: false,
@@ -76,6 +73,3 @@ permalink: /photography/
     actualSize: false
   });
 </script>
-<div class="swiper-slide">
-  <img src="{{ '/assets/photography/full/004.jpg' | relative_url }}" alt="Featured photo 4">
-</div>
