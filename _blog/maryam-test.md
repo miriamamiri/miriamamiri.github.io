@@ -1,3 +1,16 @@
+---
+layout: single
+title: "test"
+date: 2025-10-14
+excerpt: "On complementarity of nation- and state-building!"
+header:
+  teaser: /images/blog/ns_share.png  
+tldr: "nothoing!"
+---
+
+{% include tldr.html %}
+
+
 Ok, I just want to understand how it works. 
 Maryam Amiri ‎
 Nohad A. Toulan School of Urban Studies & ‎Planning, Portland State University, USA ‎‎amirimaryam.upe@gmail.com ‎
