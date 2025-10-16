@@ -1,75 +1,33 @@
+
 ---
-title: "Photography"
-layout: default
-permalink: /photography/
+layout: archive
+title: "Notes on research and work"
+permalink: /blog/
+author_profile: false
+classes: wide
 ---
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/css/lightgallery-bundle.min.css">
-<link rel="stylesheet" href="{{ '/assets/css/photography.css' | relative_url }}">
+<style>
+  .entries-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:.5rem}
+  .entry-card{border:1px solid rgba(0,0,0,.08);border-radius:12px;overflow:hidden;background:#fff}
+  .entry-card a{text-decoration:none;color:inherit;display:block}
+  .entry-card img{width:100%;display:block}
+  .entry-title{font-size:1.05rem;margin:.6rem .75rem 0}
+  .entry-excerpt{margin:.25rem .75rem .5rem;color:#444}
+  .entry-date{display:block;margin:.25rem .75rem 1rem;color:#777;font-size:.9rem}
+</style>
 
-<div class="hero-slider">
-  <div class="section-title">Featured</div>
-
-  <!-- Swiper container -->
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="{{ '/assets/photography/full/esiz.JPG' | relative_url }}" alt="Featured photo 1">
-      </div>
-      <div class="swiper-slide">
-        <img src="{{ '/assets/photography/full/office.jpeg' | relative_url }}" alt="Featured photo 2">
-      </div>
-      <div class="swiper-slide">
-        <img src="{{ '/assets/photography/full/hero.jpg' | relative_url }}" alt="Featured photo 3">
-      </div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
+{% assign docs = site.blog | sort: "date" | reverse %}
+<div class="entries-grid">
+{% for post in docs %}
+  {% assign teaser = post.header.teaser | default: site.teaser %}
+  <article class="entry-card">
+    <a href="{{ post.url | relative_url }}">
+      {% if teaser %}<img src="{{ teaser | relative_url }}" alt="{{ post.title | escape }}">{% endif %}
+      <h2 class="entry-title">{{ post.title }}</h2>
+      {% if post.excerpt %}<p class="entry-excerpt">{{ post.excerpt | strip_html | strip_newlines }}</p>{% endif %}
+      <span class="entry-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </a>
+  </article>
+{% endfor %}
 </div>
-
-<div class="gallery-wrap">
-  <div class="section-title">Gallery</div>
-  <p class="subtle">Click any image to open the lightbox.</p>
-
-  <div id="lightgallery" class="gallery-grid">
-    <a href="{{ '/assets/photography/full/esiz.JPG' | relative_url }}" data-sub-html="Caption one">
-      <img src="{{ '/assets/photography/thumbs/001.jpg' | relative_url }}" alt="Photo 1">
-    </a>
-    <a href="{{ '/assets/photography/full/office.jpeg' | relative_url }}" data-sub-html="Caption two">
-      <img src="{{ '/assets/photography/thumbs/002.jpg' | relative_url }}" alt="Photo 2">
-    </a>
-    <a href="{{ '/assets/photography/full/hero.jpg' | relative_url }}" data-sub-html="Caption three">
-      <img src="{{ '/assets/photography/thumbs/003.jpg' | relative_url }}" alt="Photo 3">
-    </a>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/lightgallery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.2/plugins/zoom/lg-zoom.min.js"></script>
-
-<script>
-  // Swiper: keep natural aspect ratio using autoHeight
-  const swiper = new Swiper('.swiper', {
-    loop: true,
-    speed: 500,
-    grabCursor: true,
-    autoHeight: true, // <- important: adapt slider height to each image
-    pagination: { el: '.swiper-pagination', clickable: true },
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-  });
-
-  // LightGallery
-  lightGallery(document.getElementById('lightgallery'), {
-    selector: 'a',
-    download: false,
-    thumbnail: true,
-    zoom: true,
-    mobileFirst: true,
-    actualSize: false
-  });
-</script>
